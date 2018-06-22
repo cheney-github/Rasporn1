@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html style="background-image:url(&quot;{% static 'images/bg.jpg' %}&quot;);">
+<head>
+    <meta charset="utf-8">
+    <title>巧乐氏OA分销系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+</head>
+
+<body>
+
+    <div class="login-clean" style="height:900px;background-image:url(&quot;{% static 'images/bg.jpg' %}&quot;);">
+        <form method="post">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="icon ion-unlocked"></i></div>
+            <div class="form-group"><input class="form-control" type="user_name" name="User_id" formmethod="post" placeholder="User_name"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" formmethod="post" placeholder="Password"></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a href="#" class="forgot">Copyright©️2018 Qleyo Reserved</a><p class="text-center text-danger">{{error}}</p></form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

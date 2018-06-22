@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!--<html style="background-image:url(&quot;{% static 'images/bg.jpg' %}&quot;);">-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/html5-video.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Navigation-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles_home.css'%} ">
+    <link rel="stylesheet" href="{% static 'css/Video-Parallax-Background-v2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Video-Responsive.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'css/Login-Form-Clean.css' %}">-->
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+            <div class="container"><a class="navbar-brand" href="#">Rasporn_home</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse"
+                    id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Pic</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Video</a></li>
+                        <li class="dropdown show"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#">admin&nbsp;</a>
+                            <div class="dropdown-menu show" role="menu"><a class="dropdown-item" role="presentation" href="#">Logout</a><a class="dropdown-item" role="presentation" href="#">Feedback</a><a class="dropdown-item" role="presentation" href="#"></a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--<div class="video-container"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/jvo86AHovFc"></iframe></div>-->
+    <p class="text-center">HTML兼容测试↓</p>
+    <video controls="controls">
+        <!--<video controls="controls"  poster="{% static 'images/video_tum/f1.jpg'%}">-->
+  <source src="{% static 'video/videoplayback.mp4'%}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+    <div></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/Video-Parallax-Background-v2.js'%}"></script>
+</body>
+</html>
